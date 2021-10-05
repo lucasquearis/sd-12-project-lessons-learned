@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  font: bold 30pt Arial;
+  font: 30pt Arial, sans-serif;
+  font-weight: 700;
 }
 
 #cabecalho {
