@@ -168,8 +168,8 @@ describe('10 - Aplique elementos HTML de acordo com o sentido e propósito de ca
 describe('11 - Teste a semântica da sua página está aprovada pelo site achecker', () => {
   it('Seu site deve passar sem problemas na verificação de semântica do site achecker', () => {
     cy.readFile('./index.html').then((content) => {
-      cy.visit('https://achecker.ca/checker/index.php');
-      cy.contains('Paste HTML Markup').click();
+      cy.visit('https://achecker.achecks.ca/checker/index.php');
+      cy.contains('Markup').click();
       cy.get('textarea').type(content);
       cy.get('#validate_paste').click();
       cy.contains('Congratulations! No known problems.');
